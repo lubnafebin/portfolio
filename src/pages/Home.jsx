@@ -8,10 +8,10 @@ export default function Home() {
       <nav className="navbar">
         <ul className="nav-links">
           <li>
-            <a href="#home">Home</a>
+            <a href="http://localhost:5173/">Home</a>
           </li>
           <li>
-            <a href="#about">About</a>
+            <a href="http://localhost:5173/about">About</a>
           </li>
           <li>
             <a href="#projects">Works</a>

@@ -1,18 +1,68 @@
-import React from 'react'
+import React from "react";
 
 export default function About() {
   return (
-    <div className='about'>
-      <h2>About Me</h2>
-      <p>
-      I am an enthusiastic and creative Frontend Developer, 
-      weaving my tech story from a small village with big dreams. 
-      My journey into the world of technology began with a Bachelor's degree in Computer Applications (BCA), 
-      where I discovered my passion for building user-friendly web interfaces and experiences.
-      Along the way, I’ve worked on several projects that helped shape my skills — including EmpowerNet, a full-stack application built with React, Node.js, and MySQL to digitize Self-Help Group management. 
-      These hands-on experiences not only strengthened my coding abilities but also sparked my interest in UI/UX design and user-centered development.
-      </p>
-      <h3>Technical Proficiency</h3>
+    <div className="about">
+      <div className="about-left">
+        <h2>About Me</h2>
+        <p>
+          I am an enthusiastic and creative Frontend Developer, weaving my tech
+          story from a small village with big dreams. My journey into the world
+          of technology began with a Bachelor's degree in Computer Applications
+          (BCA), where I discovered my passion for building user-friendly web
+          interfaces and experiences. Along the way, I’ve worked on several
+          projects that helped shape my skills — including EmpowerNet, a
+          full-stack application built with React, Node.js, and MySQL to
+          digitize Self-Help Group management. These hands-on experiences not
+          only strengthened my coding abilities but also sparked my interest in
+          UI/UX design and user-centered development.
+        </p>
+        <div className="skills-section">
+          <h3>Technical Proficiency</h3>
+          <p>Im well-versed in range of technologies includes:</p>
+          <span class="d-inline-flex">HTML</span>
+          <span class="d-inline-flex">CSS</span>
+          <span class="d-inline-flex">ReactJs</span>
+          <span class="d-inline-flex">JavaScript</span>
+          <span class="d-inline-flex">TypeScript</span>
+          <span class="d-inline-flex">Bootstrap</span>
+          <span class="d-inline-flex">MUI</span>
+          <br></br>
+          <span class="d-inline-flex">ExpressJs</span>
+          <span class="d-inline-flex">NodeJs</span>
+          <span class="d-inline-flex">Flutter</span>
+          <span class="d-inline-flex">MongoDB</span>
+          <span class="d-inline-flex">MYSQL</span>
+        </div>
+      </div>
+      <div className="about-right">
+        <div className="timeline">
+          <div className="timeline-item">
+            <div className="timeline-box">
+              <h3>Primary Education</h3>
+              <p>Attained primary education from GHS Rippon School</p>
+            </div>
+            <div className="timeline-dot"></div>
+          </div>
+          <div className="timeline-item">
+            <div className="timeline-box">
+              <h3>Secondary Education</h3>
+              <p>
+                Attained secondary education at GHSS Meppadi with a focus on
+                Computer Applications.
+              </p>
+            </div>
+            <div className="timeline-dot"></div>
+          </div>
+          <div className="timeline-item">
+            <div className="timeline-box">
+              <h3>Bachelor's Degree</h3>
+              <p>Completed BCA from Calicut university</p>
+            </div>
+            <div className="timeline-dot"></div>
+          </div>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
