@@ -2,7 +2,7 @@ import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
-export default function Home() {
+export default function Main() {
   return (
     <div>
       <nav className="navbar">
@@ -14,7 +14,7 @@ export default function Home() {
             <a href="http://localhost:5173/about">About</a>
           </li>
           <li>
-            <a href="#projects">Works</a>
+            <a href="http://localhost:5173/works">Works</a>
           </li>
           <li>
             <a href="#contact">Contact</a>
