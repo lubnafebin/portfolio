@@ -17,7 +17,7 @@ export default function Main() {
             <a href="http://localhost:5173/works">Works</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="http://localhost:5173/contact">Contact</a>
           </li>
         </ul>
       </nav>
