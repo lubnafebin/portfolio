@@ -24,10 +24,8 @@ body {
   right: 0;
   width: 100%;
   z-index: 1000;
-  background-color: transparent; /* optional */
+  background-color: transparent; 
 }
-
-
 
 .nav-links {
   display: flex;
@@ -50,6 +48,45 @@ body {
   background-clip: text; 
   -webkit-text-fill-color: transparent;
 }
+
+/* Hamburger Menu */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.menu-icon .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+}
+
+/*responsive navbar*/
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+}
+
 
 .hero {
   padding-top: 8px;
@@ -129,7 +166,6 @@ body {
   .typing-text {
     font-size: 24px;
   }
-
 
   .social-icons a {
     font-size: 1.4rem;

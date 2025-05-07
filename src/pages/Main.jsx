@@ -3,6 +3,10 @@ import { Typewriter } from "react-simple-typewriter";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 export default function Main() {
+  const toggleMenu = () => {
+    const navLinks = document.querySelector(".nav-links");
+    navLinks.classList.toggle("active");
+  };
   return (
     <div>
       <nav className="navbar">
@@ -20,6 +24,11 @@ export default function Main() {
             <a href="#contact">Contact</a>
           </li>
         </ul>
+        <div className="menu-icon" onClick={toggleMenu}>
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+        </div>
       </nav>
 
       <section className="hero">
