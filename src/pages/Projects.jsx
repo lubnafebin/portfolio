@@ -1,48 +1,78 @@
 import React from "react";
+import empowernetImg from "../assets/empowernet.png";
+import portfolioImg from "../assets/portfolio.png";
+import { TfiPinAlt } from "react-icons/tfi";
 
-const projects = [
-  {
-    title: "EmpowerNet",
-    description: "A digital self-help group management system built using React, Node.js, and MySQL.",
-    tech: ["React", "Node.js", "MySQL"],
-    live: "https://your-live-url.com",
-    github: "https://github.com/yourusername/empowernet",
-  },
-  {
-    title: "Portfolio Website",
-    description: "Personal portfolio with smooth scrolling and responsive design.",
-    tech: ["React", "CSS"],
-    github: "https://github.com/yourusername/portfolio",
-  },
-  // Add more projects here
-];
+export function Projects() {
+  const projects = [
+    {
+      title: "EmpowerNet",
+      description:
+        "EmpowerNet is a comprehensive web application developed to streamline the administration of Self-Help Groups (SHGs) across multiple levels—CDS, ADS, NHG, and Member. It enhances transparency, automates approval workflows, and facilitates efficient data management and communication within the SHG framework.",
+      tech: [
+        "React",
+        "Javascript",
+        "TypeScript",
+        "CSS",
+        "Bootstrap",
+        "Node.js",
+        "MySQL",
+        "Git",
+        "GitHub",
+      ],
+      image: empowernetImg,
+      live: "https://your-live-link.com",
+    },
+    {
+      title: "Portfolio Website",
+      description:
+        "This portfolio website highlights my work as a frontend developer, featuring selected projects, technical skills, and contact information. Built with React, it focuses on clean design, responsiveness, and user-friendly navigation.",
+      tech: ["React", "CSS", "TypeScript", "Git", "GitHub"],
+      image: portfolioImg,
+      live: "#",
+    },
+  ];
 
-export default function Projects() {
   return (
-    <div className="works">
-      <h2>My Projects</h2>
-      <div className="projects-container">
+    <section id="works" className="works-section">
+      <h2>My Recent Works</h2>
+      <div className="project-grid">
         {projects.map((project, index) => (
           <div key={index} className="project-card">
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-            <p><strong>Tech Stack:</strong> {project.tech.join(", ")}</p>
-            <div className="project-links">
-              {project.live && (
-                <a href={project.live} target="_blank" rel="noopener noreferrer">
-                  Live Demo
-                </a>
-              )}
-              {project.github && (
-                <a href={project.github} target="_blank" rel="noopener noreferrer">
-                  GitHub
-                </a>
-              )}
+            <img
+              src={project.image}
+              alt={project.title}
+              className="project-image"
+            />
+
+            <div className="card-header-inline">
+              <h3 className="project-title">{project.title}</h3>
+              <a
+                href={project.live}
+                className="live-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="gradient-icon">
+                  <TfiPinAlt />
+                </span>{" "}
+                Live
+              </a>
+            </div>
+
+            <p className="project-description">{project.description}</p>
+
+            <div className="tech-tags">
+              {project.tech.map((tech, i) => (
+                <span key={i} className="tech-hash">
+                  <span className="hash-symbol">#</span>
+                  {tech}
+                </span>
+              ))}
             </div>
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
-
