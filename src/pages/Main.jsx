@@ -8,16 +8,16 @@ export default function Main() {
       <nav className="navbar">
         <ul className="nav-links">
           <li>
-            <a href="http://localhost:5173/">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li>
-            <a href="http://localhost:5173/about">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="http://localhost:5173/works">Works</a>
+            <a href="#projects">Works</a>
           </li>
           <li>
-            <a href="http://localhost:5173/contact">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>

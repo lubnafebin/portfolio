@@ -48,7 +48,7 @@ body {
 }
 
 .hero h1 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
   font-size: 80px;
   color: white;
 }
@@ -191,6 +191,34 @@ body {
   max-width: 400px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
+.works {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.project-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.project-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.project-links a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #007bff;
+}
+
 
 .contact {
   padding: 2rem;
@@ -253,9 +281,11 @@ body {
   color: #ddd;
 }
 
-.message {
-  text-align: center;
+.message-content {
+  display:inline-table ;
+  align-items: center;
 }
+
 
 .icons a svg {
   background: linear-gradient(90deg, #9d63ff, #e879f9);
@@ -273,14 +303,27 @@ body {
 
 .icons a {
   font-size: 1.5rem;
-  color: white;
+  color: #e879f9;
   transition: color 0.3s ease;
 }
 
 .icons a:hover {
-  color: #e879f9;
+  color: #a715c1;
 }
 
+section {
+  min-height: 100vh;
+  padding: 40px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  min-height: 100vh; /* Make each section take the full screen height */
+  padding: 2rem;
+}
 
 
 

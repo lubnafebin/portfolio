@@ -21,29 +21,31 @@ export const Contact = () => {
         </div>
 
         <div className="message">
-          <h4>Message Me</h4>
-          <div className="icons">
-            <a
-              href="https://github.com/lubnafebin"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaGithub />
-            </a>
-            <a
-              href="https://linkedin.com/in/lubnafebin"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaLinkedin />
-            </a>
-            <a
-              href="https://instagram.com/lubna_._febin"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaInstagram />
-            </a>
+          <div className="message-content">
+            <h4>Message Me</h4>
+            <div className="icons">
+              <a
+                href="https://github.com/lubnafebin"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub />
+              </a>
+              <a
+                href="https://linkedin.com/in/lubnafebin"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin />
+              </a>
+              <a
+                href="https://instagram.com/lubna_._febin"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagram />
+              </a>
+            </div>
           </div>
         </div>
       </div>
