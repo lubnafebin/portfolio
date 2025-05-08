@@ -27,7 +27,6 @@ export default function About() {
           <span class="d-inline-flex">TypeScript</span>
           <span class="d-inline-flex">Bootstrap</span>
           <span class="d-inline-flex">MUI</span>
-          <br></br>
           <span class="d-inline-flex">ExpressJs</span>
           <span class="d-inline-flex">NodeJs</span>
           <span class="d-inline-flex">Flutter</span>
@@ -40,7 +39,7 @@ export default function About() {
           <div className="timeline-item">
             <div className="timeline-box">
               <h3>Primary Education</h3>
-              <p>Attained primary education from GHS Rippon School</p>
+              <p>Attained primary education from Govt High school Rippon</p>
             </div>
             <div className="timeline-dot"></div>
           </div>
@@ -56,8 +55,8 @@ export default function About() {
           </div>
           <div className="timeline-item">
             <div className="timeline-box">
-              <h3>Bachelor's Degree</h3>
-              <p>Completed BCA from Calicut university</p>
+              <h3>Under Graduation</h3>
+              <p>Completed a Bachelor's degree in Computer Applications from Calicut University.</p>
             </div>
             <div className="timeline-dot"></div>
           </div>

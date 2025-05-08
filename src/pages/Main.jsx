@@ -1,34 +1,49 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 export default function Main() {
-  const toggleMenu = () => {
-    const navLinks = document.querySelector(".nav-links");
-    navLinks.classList.toggle("active");
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? "hidden" : "auto";
+  }, [menuOpen]);
+
+  const handleLinkClick = () => {
+    setMenuOpen(false);
   };
   return (
     <div>
       <nav className="navbar">
-        <ul className="nav-links">
+        <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
+          <span className={menuOpen ? "bar rotate-top" : "bar"}></span>
+          <span className={menuOpen ? "bar hide-middle" : "bar"}></span>
+          <span className={menuOpen ? "bar rotate-bottom" : "bar"}></span>
+        </div>
+
+        <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
           <li>
-            <a href="#home">Home</a>
+            <a href="#home" onClick={handleLinkClick}>
+              Home
+            </a>
           </li>
           <li>
-            <a href="#about">About</a>
+            <a href="#about" onClick={handleLinkClick}>
+              About
+            </a>
           </li>
           <li>
-            <a href="#projects">Works</a>
+            <a href="#projects" onClick={handleLinkClick}>
+              Works
+            </a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact" onClick={handleLinkClick}>
+              Contact
+            </a>
           </li>
         </ul>
-        <div className="menu-icon" onClick={toggleMenu}>
-          <span className="bar"></span>
-          <span className="bar"></span>
-          <span className="bar"></span>
-        </div>
       </nav>
 
       <section className="hero">
@@ -47,31 +62,30 @@ export default function Main() {
             delaySpeed={1000}
           />
         </p>
+        <div className="social-icons">
+          <a
+            href="https://github.com/lubnafebin"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/lubna-febin/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            href="https://instagram.com/lubna._.febin"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
+        </div>
       </section>
-
-      <div className="social-icons">
-        <a
-          href="https://github.com/lubnafebin"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaGithub />
-        </a>
-        <a
-          href="https://linkedin.com/in/lubnafebin"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaLinkedin />
-        </a>
-        <a
-          href="https://instagram.com/lubna_._febin"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaInstagram />
-        </a>
-      </div>
     </div>
   );
 }

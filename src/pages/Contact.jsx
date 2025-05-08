@@ -12,29 +12,31 @@ export const Contact = () => {
         </p>
 
         <a
-          href="mailto:xyz@gmail.com"
+          href="mailto:lubnafebin13@gmail.com"
           className="email-button"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Say Hello
         </a>
 
         <div className="icons">
           <a
-            href="https://github.com/xyz"
+            href="https://github.com/lubnafebin"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/xyz"
+            href="https://www.linkedin.com/in/lubna-febin/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaLinkedin />
           </a>
           <a
-            href="https://instagram.com/xyz"
+            href="https://instagram.com/lubna._.febin"
             target="_blank"
             rel="noopener noreferrer"
           >

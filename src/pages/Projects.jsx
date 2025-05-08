@@ -65,7 +65,7 @@ export function Projects() {
             <div className="tech-tags">
               {project.tech.map((tech, i) => (
                 <span key={i} className="tech-hash">
-                  <span className="hash-symbol">#</span>
+                  <span className="hash-symbol"> #</span>
                   {tech}
                 </span>
               ))}
