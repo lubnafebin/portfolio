@@ -1,6 +1,7 @@
-import React from "react";
 import empowernetImg from "../assets/empowernet.png";
 import portfolioImg from "../assets/portfolio.png";
+import netflixImg from "../assets/netflix.png";
+import adminImg from "../assets/admin.png";
 import { TfiPinAlt } from "react-icons/tfi";
 
 export function Projects() {
@@ -24,12 +25,28 @@ export function Projects() {
       live: "https://your-live-link.com",
     },
     {
+      title: "Netflix",
+      description:
+        "This is a React-based web application that displays movies dynamically by fetching data from The Movie Database (TMDB) API.Users can explore different categories of movies and watch their trailers through YouTube integration. The project highlights dynamic rendering, API integration, and clean UI design.",
+      tech: ["React", "CSS", "TMDB", "Git", "GitHub"],
+      image: netflixImg,
+      live: "https://netflix-lubnas-projects-1383a28b.vercel.app/",
+    },
+    {
       title: "Portfolio Website",
       description:
         "This portfolio website highlights my work as a frontend developer, featuring selected projects, technical skills, and contact information. Built with React, it focuses on clean design, responsiveness, and user-friendly navigation.",
       tech: ["React", "CSS", "TypeScript", "Git", "GitHub"],
       image: portfolioImg,
       live: "#",
+    },
+    {
+      title: "Admin Dashboard",
+      description:
+        "A React-based admin dashboard that displays data dynamically using local data files. It features clean layout components like tables, charts, forms, and sidebar navigation. The project highlights component-based design and dynamic rendering without backend integration.",
+      tech: ["React", "SCSS", "TypeScript", "Git", "GitHub"],
+      image: adminImg,
+      live: "https://admin-dashboard-lubnas-projects-1383a28b.vercel.app/",
     },
   ];
 
