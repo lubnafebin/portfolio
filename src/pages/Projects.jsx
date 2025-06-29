@@ -12,7 +12,8 @@ export function Projects() {
         "EmpowerNet is a comprehensive web application developed to streamline the administration of Self-Help Groups (SHGs) across multiple levels—CDS, ADS, NHG, and Member. It enhances transparency, automates approval workflows, and facilitates efficient data management and communication within the SHG framework.",
       tech: [
         "React",
-        "Javascript",
+        "Vite",
+        "JavaScript",
         "TypeScript",
         "CSS",
         "Bootstrap",
@@ -36,7 +37,7 @@ export function Projects() {
       title: "Portfolio Website",
       description:
         "This portfolio website highlights my work as a frontend developer, featuring selected projects, technical skills, and contact information. Built with React, it focuses on clean design, responsiveness, and user-friendly navigation.",
-      tech: ["React", "CSS", "TypeScript", "Git", "GitHub"],
+      tech: ["React", "CSS", "Vite", "JavaScript", "Git", "GitHub"],
       image: portfolioImg,
       live: "#",
     },

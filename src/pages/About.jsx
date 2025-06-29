@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function About() {
   return (
     <div className="about">
@@ -20,18 +18,18 @@ export default function About() {
         <div className="skills-section">
           <h3>Technical Proficiency</h3>
           <p>Im well-versed in range of technologies includes:</p>
-          <span class="d-inline-flex">HTML</span>
-          <span class="d-inline-flex">CSS</span>
-          <span class="d-inline-flex">ReactJs</span>
-          <span class="d-inline-flex">JavaScript</span>
-          <span class="d-inline-flex">TypeScript</span>
-          <span class="d-inline-flex">Bootstrap</span>
-          <span class="d-inline-flex">MUI</span>
-          <span class="d-inline-flex">ExpressJs</span>
-          <span class="d-inline-flex">NodeJs</span>
-          <span class="d-inline-flex">Flutter</span>
-          <span class="d-inline-flex">MongoDB</span>
-          <span class="d-inline-flex">MYSQL</span>
+          <span className="d-inline-flex">HTML</span>
+          <span className="d-inline-flex">CSS</span>
+          <span className="d-inline-flex">ReactJs</span>
+          <span className="d-inline-flex">JavaScript</span>
+          <span className="d-inline-flex">TypeScript</span>
+          <span className="d-inline-flex">Bootstrap</span>
+          <span className="d-inline-flex">MUI</span>
+          <span className="d-inline-flex">ExpressJs</span>
+          <span className="d-inline-flex">NodeJs</span>
+          <span className="d-inline-flex">Flutter</span>
+          <span className="d-inline-flex">MongoDB</span>
+          <span className="d-inline-flex">MYSQL</span>
         </div>
       </div>
       <div className="about-right">

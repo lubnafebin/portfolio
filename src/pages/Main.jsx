@@ -1,10 +1,34 @@
-import React from "react";
 import { useState, useEffect } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 export default function Main() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
+
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+
+    const handleScroll = () => {
+      let current = "";
+      const scrollPos = window.scrollY;
+
+      sections.forEach((section) => {
+        const offsetTop = section.offsetTop;
+        const offsetHeight = section.offsetHeight;
+        if (
+          scrollPos >= offsetTop - 100 &&
+          scrollPos < offsetTop + offsetHeight - 100
+        ) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      setActiveSection(current);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "auto";
@@ -13,6 +37,7 @@ export default function Main() {
   const handleLinkClick = () => {
     setMenuOpen(false);
   };
+
   return (
     <div>
       <nav className="navbar">
@@ -21,25 +46,40 @@ export default function Main() {
           <span className={menuOpen ? "bar hide-middle" : "bar"}></span>
           <span className={menuOpen ? "bar rotate-bottom" : "bar"}></span>
         </div>
-
         <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
           <li>
-            <a href="#home" onClick={handleLinkClick}>
+            <a
+              href="#home"
+              onClick={handleLinkClick}
+              className={activeSection === "home" ? "active" : ""}
+            >
               Home
             </a>
           </li>
           <li>
-            <a href="#about" onClick={handleLinkClick}>
+            <a
+              href="#about"
+              onClick={handleLinkClick}
+              className={activeSection === "about" ? "active" : ""}
+            >
               About
             </a>
           </li>
           <li>
-            <a href="#projects" onClick={handleLinkClick}>
+            <a
+              href="#projects"
+              onClick={handleLinkClick}
+              className={activeSection === "works" ? "active" : ""}
+            >
               Works
             </a>
           </li>
           <li>
-            <a href="#contact" onClick={handleLinkClick}>
+            <a
+              href="#contact"
+              onClick={handleLinkClick}
+              className={activeSection === "contact" ? "active" : ""}
+            >
               Contact
             </a>
           </li>
@@ -78,7 +118,7 @@ export default function Main() {
             <FaLinkedin />
           </a>
           <a
-            href="https://instagram.com/lubna._.febin"
+            href="https://instagram.com/lubna__febin"
             target="_blank"
             rel="noopener noreferrer"
           >

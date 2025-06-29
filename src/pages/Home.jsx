@@ -7,7 +7,6 @@ import { Projects } from "./Projects";
 export default function Home() {
   return (
     <>
-      {/* 👇 Wrap the Main in a section with id="home" */}
       <section id="home">
         <Main />
       </section>
