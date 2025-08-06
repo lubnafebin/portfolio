@@ -42,19 +42,19 @@ export function Projects() {
       live: "#",
     },
     {
-      title: "Wayanad Explorer",
-      description: "under construction",
-      tech: ["React", "Tailwind css", "JavaScript", "Git", "GitHub"],
-      image: "",
-      live: "",
-    },
-    {
       title: "Admin Dashboard",
       description:
         "A React-based admin dashboard that displays data dynamically using local data files. It features clean layout components like tables, charts, forms, and sidebar navigation. The project highlights component-based design and dynamic rendering without backend integration.",
       tech: ["React", "SCSS", "TypeScript", "Git", "GitHub"],
       image: adminImg,
       live: "https://admin-dashboard-lubnas-projects-1383a28b.vercel.app/",
+    },
+    {
+      title: "Travel Explorer",
+      description: "under construction",
+      tech: ["React", "Tailwind css", "JavaScript", "Git", "GitHub"],
+      image: "",
+      live: "",
     },
   ];
 
