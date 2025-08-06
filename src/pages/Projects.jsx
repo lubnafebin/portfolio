@@ -43,11 +43,10 @@ export function Projects() {
     },
     {
       title: "Wayanad Explorer",
-      description:
-        "A React-based explorer site that displays destinations dynamically using local data files. It features clean layout components like tables, charts, forms, and sidebar navigation. The project highlights component-based design and dynamic rendering without backend integration.",
+      description: "under construction",
       tech: ["React", "Tailwind css", "JavaScript", "Git", "GitHub"],
-      image: adminImg,
-      live: "https://admin-dashboard-lubnas-projects-1383a28b.vercel.app/",
+      image: "",
+      live: "",
     },
     {
       title: "Admin Dashboard",
