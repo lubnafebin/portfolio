@@ -2,6 +2,7 @@ import empowernetImg from "../assets/empowernet.png";
 import portfolioImg from "../assets/portfolio.png";
 import netflixImg from "../assets/netflix.png";
 import adminImg from "../assets/admin.png";
+import wayanadImg from "../assets/explorer.png";
 import { TfiPinAlt } from "react-icons/tfi";
 
 export function Projects() {
@@ -23,7 +24,7 @@ export function Projects() {
         "GitHub",
       ],
       image: empowernetImg,
-      live: "https://your-live-link.com",
+      live: "https://github.com/lubnafebin/empowerNet",
     },
     {
       title: "Netflix",
@@ -42,19 +43,20 @@ export function Projects() {
       live: "#",
     },
     {
+      title: "Wayanad Explorer",
+      description:
+        "Developed a responsive travel web app using React and Tailwind CSS to explore destinations in Wayanad.Designed a clean, modern UI with smooth navigation and story highlights for an engaging user experience.",
+      tech: ["React", "Tailwind CSS", "JavaScript", "Git", "GitHub"],
+      image: wayanadImg,
+      live: "https://wayanad-explorer.vercel.app/",
+    },
+    {
       title: "Admin Dashboard",
       description:
         "A React-based admin dashboard that displays data dynamically using local data files. It features clean layout components like tables, charts, forms, and sidebar navigation. The project highlights component-based design and dynamic rendering without backend integration.",
       tech: ["React", "SCSS", "TypeScript", "Git", "GitHub"],
       image: adminImg,
       live: "https://admin-dashboard-lubnas-projects-1383a28b.vercel.app/",
-    },
-    {
-      title: "Travel Explorer",
-      description: "under construction",
-      tech: ["React", "Tailwind css", "JavaScript", "Git", "GitHub"],
-      image: "",
-      live: "",
     },
   ];
 
