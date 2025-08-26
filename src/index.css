@@ -102,7 +102,7 @@ body::-webkit-scrollbar {
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
-    z-index: 1001; /* Above the menu */
+    z-index: 1001; 
   }
 
   .bar {
@@ -317,7 +317,7 @@ body::-webkit-scrollbar {
   border-radius: 50%;
 }
 .timeline-box h3 {
-  margin-bottom: 1rem; /* Ensures heading is above the paragraph */
+  margin-bottom: 1rem; 
 }
 
 .timeline-box {
@@ -334,13 +334,12 @@ body::-webkit-scrollbar {
   @media (max-width: 768px) {
     /* Ensure the layout remains centered */
     .about {
-      flex-direction: column;  /* Stack the sections on top of each other */
+      flex-direction: column;  
       padding: 1rem;
-      justify-content: center; /* Center vertically */
     }
   
     .about-left, .about-right {
-      min-width: 100%; /* Take up full width on mobile */
+      min-width: 100%; 
       text-align: center;
     }
   
@@ -430,6 +429,7 @@ body::-webkit-scrollbar {
 .gradient-icon {
   background: linear-gradient(45deg, #9d63ff, #e879f9);
   -webkit-background-clip: text;
+  background-clip: text; 
   color: transparent;
   display: inline-block;
 }
@@ -493,6 +493,9 @@ body::-webkit-scrollbar {
 
   .project-description {
     font-size: 0.95rem; 
+  }
+  .project-image {
+    height: 100px;
   }
 
   .live-link {
