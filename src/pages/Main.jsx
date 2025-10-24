@@ -93,7 +93,7 @@ export default function Main() {
         <p className="typing-text">
           {" "}
           <Typewriter
-            words={["Frontend Developer", "UI/UX Designer"]}
+            words={["Full Stack Developer", "UI/UX Designer"]}
             loop={true}
             cursor
             cursorStyle="|"

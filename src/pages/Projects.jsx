@@ -1,7 +1,8 @@
 import empowernetImg from "../assets/empowernet.png";
 import portfolioImg from "../assets/portfolio.png";
 import netflixImg from "../assets/netflix.png";
-import adminImg from "../assets/admin.png";
+import veggieCartImg from "../assets/veggiecart.png";
+import recipeAppImg from "../assets/recipe.png";
 import wayanadImg from "../assets/explorer.png";
 import { TfiPinAlt } from "react-icons/tfi";
 
@@ -10,7 +11,7 @@ export function Projects() {
     {
       title: "EmpowerNet",
       description:
-        "EmpowerNet is a comprehensive web application developed to streamline the administration of Self-Help Groups (SHGs) across multiple levels—CDS, ADS, NHG, and Member. It enhances transparency, automates approval workflows, and facilitates efficient data management and communication within the SHG framework.",
+        "EmpowerNet is a comprehensive web application developed to streamline the administration of Self-Help Groups (SHGs) across multiple levels—CDS, ADS, NHG, and Member.",
       tech: [
         "React",
         "Vite",
@@ -25,6 +26,38 @@ export function Projects() {
       ],
       image: empowernetImg,
       live: "https://github.com/lubnafebin/empowerNet",
+    },
+    {
+      title: "Recipe App",
+      description:
+        "AI-powered recipe app that generates recipes based on user input. Frontend built with React and Tailwind CSS, backend APIs with Node.js and MongoDB.",
+      tech: [
+        "React",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Tailwind CSS",
+        "Git",
+        "GitHub",
+      ],
+      image: recipeAppImg,
+      live: "https://recipe-app-eight-gamma.vercel.app/",
+    },
+    {
+      title: "Veggie-Cart",
+      description:
+        "A vegetable shopping cart web app with add-to-cart, quantity update, and order management features. Built with RESTful APIs and responsive frontend.",
+      tech: [
+        "React",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "CSS",
+        "Git",
+        "GitHub",
+      ],
+      image: veggieCartImg,
+      live: "https://product-list-three-kappa.vercel.app/",
     },
     {
       title: "Netflix",
@@ -49,14 +82,6 @@ export function Projects() {
       tech: ["React", "Tailwind CSS", "JavaScript", "Git", "GitHub"],
       image: wayanadImg,
       live: "https://wayanad-explorer.vercel.app/",
-    },
-    {
-      title: "Admin Dashboard",
-      description:
-        "A React-based admin dashboard that displays data dynamically using local data files. It features clean layout components like tables, charts, forms, and sidebar navigation. The project highlights component-based design and dynamic rendering without backend integration.",
-      tech: ["React", "SCSS", "TypeScript", "Git", "GitHub"],
-      image: adminImg,
-      live: "https://admin-dashboard-lubnas-projects-1383a28b.vercel.app/",
     },
   ];
 
@@ -83,7 +108,7 @@ export function Projects() {
                 <span className="gradient-icon">
                   <TfiPinAlt />
                 </span>{" "}
-                Live
+                Link
               </a>
             </div>
 
