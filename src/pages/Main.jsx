@@ -118,7 +118,7 @@ export default function Main() {
             <FaLinkedin />
           </a>
           <a
-            href="https://instagram.com/lubna__febin"
+            href="https://instagram.com"
             target="_blank"
             rel="noopener noreferrer"
           >
