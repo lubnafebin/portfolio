@@ -4,22 +4,21 @@ export default function About() {
       <div className="about-left">
         <h2>About Me</h2>
         <p>
-          I am an enthusiastic and creative Frontend Developer, weaving my tech
-          story from a small village with big dreams. My journey into the world
-          of technology began with a Bachelor's degree in Computer Applications
-          (BCA), where I discovered my passion for building user-friendly web
-          interfaces and experiences. Along the way, I’ve worked on several
-          projects that helped shape my skills — including EmpowerNet, a
-          full-stack application built with React, Node.js, and MySQL to
-          digitize Self-Help Group management. These hands-on experiences not
-          only strengthened my coding abilities but also sparked my interest in
-          UI/UX design and user-centered development.
+          I am an enthusiastic and creative Full Stack Developer with a strong passion 
+          for building efficient, user-friendly, and visually appealing web applications. 
+          My journey into technology began with a Bachelor’s degree in Computer Applications (BCA), 
+          where I developed a deep interest in both frontend and backend development. 
+          Through various personal projects, I have gained hands-on experience working with the 
+          MERN stack (MongoDB, Express.js, React.js, Node.js), which has strengthened my technical 
+          foundation and problem-solving skills. I am highly motivated to continue learning 
+          and creating impactful digital solutions that enhance user experience.
         </p>
         <div className="skills-section">
           <h3>Technical Proficiency</h3>
           <p>Im well-versed in range of technologies includes:</p>
           <span className="d-inline-flex">HTML</span>
           <span className="d-inline-flex">CSS</span>
+          <span className="d-inline-flex">Tailwind CSS</span>
           <span className="d-inline-flex">ReactJs</span>
           <span className="d-inline-flex">JavaScript</span>
           <span className="d-inline-flex">TypeScript</span>
@@ -30,6 +29,8 @@ export default function About() {
           <span className="d-inline-flex">Flutter</span>
           <span className="d-inline-flex">MongoDB</span>
           <span className="d-inline-flex">MYSQL</span>
+          <span className="d-inline-flex">Git</span>
+          <span className="d-inline-flex">Github</span>
         </div>
       </div>
       <div className="about-right">

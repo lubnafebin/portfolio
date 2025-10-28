@@ -62,7 +62,7 @@ export function Projects() {
     {
       title: "Netflix",
       description:
-        "This is a React-based web application that displays movies dynamically by fetching data from The Movie Database (TMDB) API.Users can explore different categories of movies and watch their trailers through YouTube integration. The project highlights dynamic rendering, API integration, and clean UI design.",
+        "This is a React-based web application that displays movies dynamically by fetching data from The Movie Database (TMDB) API.Users can explore different categories of movies and watch their trailers through YouTube integration.",
       tech: ["React", "CSS", "TMDB", "Git", "GitHub"],
       image: netflixImg,
       live: "https://netflix-lubnas-projects-1383a28b.vercel.app/",
