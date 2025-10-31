@@ -221,6 +221,8 @@ body::-webkit-scrollbar {
   color: white;
   gap: 2rem;
   margin: 0 auto;
+  max-width: 1200px;
+   align-items: flex-start;
 }
 
 .about-left {
@@ -271,19 +273,23 @@ body::-webkit-scrollbar {
   cursor: pointer;
   background-color: #211d1d;
   margin: 8px;
-  padding: 10px;
+  padding: 10px 14px;
   border-radius: 10px;
   font-size: 15px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.3s ease;
+}
+
+.skills-section span:hover {
+  background-color: #2b2727;
+  transform: scale(1.05);
 }
 
 .d-inline-flex {
   display: inline-flex !important;
   flex-wrap: wrap;
-}
-
-.skills-section p{
-  text-align: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 .timeline {
@@ -320,41 +326,101 @@ body::-webkit-scrollbar {
   border-radius: 50%;
 }
 .timeline-box h3 {
-  margin-bottom: 1rem; 
+  margin-bottom: 0.2rem; 
 }
 
 .timeline-box {
   background-color: #211d1d;
   color: #fff;
   padding: 1rem;
-  border-radius: 26px;
+  border-radius: 20px;
   max-width: 400px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
 /* Responsive Design */
 
-  @media (max-width: 768px) {
-    /* Ensure the layout remains centered */
-    .about {
-      flex-direction: column;  
-      padding: 1rem;
-    }
-  
-    .about-left, .about-right {
-      min-width: 100%; 
-      text-align: center;
-    }
-  
-    .skills-section {
-      margin-top: 2rem;
-      display: block;
-    }
-  
-    .timeline-item {
-      padding-left: 0;
-    }
+  @media (max-width: 1024px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1.5rem;
   }
+
+  .about h2 {
+    font-size: 2rem;
+  }
+
+  .about p {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .skills-section h3 {
+    font-size: 1.4rem;
+  }
+
+  .timeline {
+    padding-left: 1.5rem;
+  }
+
+  .timeline::before {
+    left: 42px;
+  }
+
+  .timeline-box {
+    max-width: 90%;
+  }
+}
+
+/* ==== Mobile View (max-width: 600px) ==== */
+@media (max-width: 600px) {
+  .about {
+    padding: 1.5rem 1rem;
+  }
+
+  .about h2 {
+    font-size: 1.8rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .skills-section h3 {
+    font-size: 1.2rem;
+  }
+
+  .skills-section span {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .timeline {
+    margin: 3rem 0;
+    padding-left: 0;
+  }
+
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-item {
+    padding-left: 45px;
+  }
+
+  .timeline-box {
+    max-width: 100%;
+    font-size: 0.95rem;
+  }
+
+  .timeline-dot {
+    left: 15px;
+    width: 12px;
+    height: 12px;
+  }
+}
 
 /* ==== Projects Section ==== */
 .works-section {
@@ -385,9 +451,6 @@ body::-webkit-scrollbar {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, filter 0.2s ease;
   text-align: left;
-  /* position: relative; */
-  /* justify-content: center; */
-  /* align-items: center; */
   display: flex;
   flex-direction: column;
 }
