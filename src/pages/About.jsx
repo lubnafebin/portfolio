@@ -4,13 +4,14 @@ export default function About() {
       <div className="about-left">
         <h2>About Me</h2>
         <p>
-          I am an enthusiastic and creative Full Stack Developer with a strong passion 
-          for building efficient, user-friendly, and visually appealing web applications. 
-          My journey into technology began with a Bachelor’s degree in Computer Applications (BCA), 
-          where I developed a deep interest in both frontend and backend development. 
-          Through various personal projects, I have gained hands-on experience working with the 
-          MERN stack (MongoDB, Express.js, React.js, Node.js), which has strengthened my technical 
-          foundation and problem-solving skills.
+          I am an enthusiastic and creative Full Stack Developer with a strong
+          passion for building efficient, user-friendly, and visually appealing
+          web applications. My journey into technology began with a Bachelor’s
+          degree in Computer Applications (BCA), where I developed a deep
+          interest in both frontend and backend development. Through various
+          personal projects, I have gained hands-on experience working with the
+          MERN stack (MongoDB, Express.js, React.js, Node.js), which has
+          strengthened my technical foundation and problem-solving skills.
         </p>
         <div className="skills-section">
           <h3>Technical Proficiency</h3>
@@ -54,7 +55,10 @@ export default function About() {
           <div className="timeline-item">
             <div className="timeline-box">
               <h3>Under Graduation</h3>
-              <p>Completed a Bachelor's degree in Computer Applications from Calicut University.</p>
+              <p>
+                Completed a Bachelor's degree in Computer Applications from
+                Calicut University.
+              </p>
             </div>
             <div className="timeline-dot"></div>
           </div>
