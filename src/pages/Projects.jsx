@@ -15,7 +15,6 @@ export function Projects() {
       tech: [
         "React",
         "Vite",
-        "JavaScript",
         "TypeScript",
         "CSS",
         "Bootstrap",
