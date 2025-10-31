@@ -10,8 +10,7 @@ export default function About() {
           where I developed a deep interest in both frontend and backend development. 
           Through various personal projects, I have gained hands-on experience working with the 
           MERN stack (MongoDB, Express.js, React.js, Node.js), which has strengthened my technical 
-          foundation and problem-solving skills. I am highly motivated to continue learning 
-          and creating impactful digital solutions that enhance user experience.
+          foundation and problem-solving skills.
         </p>
         <div className="skills-section">
           <h3>Technical Proficiency</h3>
